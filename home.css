@@ -1,0 +1,18 @@
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .color-box {
+    width: 100%;
+    padding-top: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .color-box {
+      padding-top: 50%; 
+    }
+  }
+  
