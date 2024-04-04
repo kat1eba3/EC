@@ -12,10 +12,12 @@
     transition: transform 0.3s ease; 
     position: relative;
     top: 80px;
+    cursor: pointer;
+
 }
 
 body {
-    background-color: #891824;
+    background-color: #fbfdfb;
     background-position:center;
     background-size: cover;
     margin: 0; /* Remove default body margin */
@@ -31,4 +33,10 @@ body {
     .container {
         padding: 0 10px; /* Adjust padding for smaller screens */
     }
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    position: absolute;
 }
