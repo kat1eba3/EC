@@ -37,3 +37,13 @@ body {
 .color-box:nth-child(18) { top: 20%; left: 90%; }
 .color-box:nth-child(19) { top: 40%; left: 10%; }
 .color-box:nth-child(20) { top: 60%; left: 30%; }
+
+#dataTextbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 9999;
+  color: white;
+}
+
