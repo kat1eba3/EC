@@ -38,12 +38,14 @@ body {
 .color-box:nth-child(19) { top: 40%; left: 10%; }
 .color-box:nth-child(20) { top: 60%; left: 30%; }
 
-#dataTextbox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  z-index: 9999;
-  color: white;
-}
 
+.data-textbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  max-width: 400px;
+}

@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const colorBoxes = document.querySelectorAll('.color-box');
     const jsonData = [
-        
+
             {   
                 "colorSchemeComplemantaryNeuralEtc": "Neutral with accent",
                 "colorsOfOutfit": "deep red, yellow, cool toned brown, white",
@@ -204,8 +204,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 "moodOfOutfitBoldCalmEtc": "playful, eccentric, casual",
                 "hexCode": "F1F6FF, 343346, 1755B3, FFDAFF",
                 "rating": "7.2/10"
-            }
-    ];
+            }   ];
 
     const textBox = document.createElement('div');
     textBox.id = 'dataTextBox';
@@ -213,24 +212,40 @@ document.addEventListener("DOMContentLoaded", function() {
     textBox.style.display = 'none'; // Hide the textbox initially
     document.body.appendChild(textBox);
 
+    let isVisible = false; // Variable to track visibility
+    let currentIndex = null; // Variable to track the index of the last clicked color box
+
     colorBoxes.forEach((colorBox, index) => {
         colorBox.addEventListener('click', function() {
-            const data = jsonData[index];
-            showDataType(data);
+            if (isVisible && currentIndex === index) {
+                hideDataType();
+                isVisible = false;
+                currentIndex = null;
+            } else {
+                const data = jsonData[index];
+                showDataType(data);
+                isVisible = true;
+                currentIndex = index;
+            }
         });
     });
-    
 
     function showDataType(data) {
         const textBox = document.getElementById('dataTextBox');
-        textBox.textContent = `
-            Color Scheme: ${data.colorSchemeComplemantaryNeuralEtc}
-            Colors of Outfit: ${data.colorsOfOutfit}
-            Mood of Outfit: ${data.moodOfOutfitBoldCalmEtc}
-            Hex Code: ${data.hexCode}
-            Rating: ${data.rating}
+        textBox.innerHTML = `
+        <div class="data-item">
+        <p><strong>Color Scheme:</strong> ${data.colorSchemeComplemantaryNeuralEtc}</p>
+        <p><strong>Colors of Outfit:</strong> ${data.colorsOfOutfit}</p>
+        <p><strong>Mood of Outfit:</strong> ${data.moodOfOutfitBoldCalmEtc}</p>
+        <p><strong>Hex Code:</strong> ${data.hexCode}</p>
+        <p><strong>Rating:</strong> ${data.rating}</p>
+    </div>
         `;
         textBox.style.display = 'block'; // Show the textbox
-    
+    }
+
+    function hideDataType() {
+        const textBox = document.getElementById('dataTextBox');
+        textBox.style.display = 'none'; // Hide the textbox
     }
 });
