@@ -103,7 +103,7 @@ body {
   left: 0;
   width: 100%;
   height: 40px; /* Adjust height as needed */
-  background-image: url(/imgs/ok.jpeg);
+  background-image: url(EC/imgs/ok.jpeg);
   display: flex;
   justify-content: space-between;
   align-items: center;
