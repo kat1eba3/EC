@@ -296,4 +296,8 @@ document.addEventListener("DOMContentLoaded", function() {
         secondTextBox.style.display = 'none'; // Hide the second textbox
         clickCount = 0; // Reset click count
     }
+
+    
+    
+    
 });
