@@ -44,8 +44,21 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: #f0eee5;
   padding: 20px;
-  border: 1px solid black;
-  max-width: 400px;
+  width: 400px;
+  height:400px;
+  border-radius: 100%;
+  font-family: 'Kode Mono', monospace;
+  font-size: 12px;
+}
+
+.data-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: flex-start; /* Align items to the start (left) */
+  height: 100%; /* Ensure the content takes up the full height of the circle */
+  width: 200px;
+  padding-left: 100px;
 }
