@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "confident",
             "hexCode": "#8D1B26, #7D6862, #FDFDD5, #E1E0F1",
             "rating": "8.2/10",
-            "imagePath": "IMGS/EC_1.png"
+            "imagePath": "./IMGS/EC_1.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Monochromatic",
