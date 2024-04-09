@@ -1,12 +1,14 @@
 body {
-  background-color: #f0eee5;
+  background-color: #F6EBD8;
 }
 
 .color-grid {
   position: relative;
-  width: 100%;
+  width: calc(100% - 200px); /* Adjusted width to accommodate the menu bar */
   height: 100vh;
+  margin-left: 200px; /* Add left margin to create space for the menu bar */
 }
+
 
 .color-box {
   width: 5%; /* Adjust the width as needed */
@@ -55,7 +57,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f0eee5;
+  background-color: #F6EBD8;
   padding: 20px;
   border: 1px solid black;
   width: 40%; /* Adjusted width for responsiveness */
@@ -66,6 +68,8 @@ body {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
+  margin-left: 200px; /* Add left margin to create space for the menu bar */
+
 }
 
 #secondTextBox {
@@ -73,6 +77,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  margin-left: 200px; /* Add left margin to create space for the menu bar */
+
 }
 
 .data-item {
@@ -83,6 +89,7 @@ body {
   height: 100%;
   width: 200px;
   padding-left: 100px;
+  
 }
 
 .data-item img {
@@ -91,6 +98,49 @@ body {
   display: block;
   margin: 10px auto;
 }
+
+
+.sidebar {
+  height: 100%;
+  width: 200px; /* Width of the side menu bar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url('/imgs/ok.jpeg'); /* Specify the path to your background image */
+  padding-top: 20px; /* Add padding at the top */
+}
+
+.sidebar ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.sidebar ul li {
+  padding: 10px 15px; /* Add padding to each menu item */
+  font-family: 'Kode Mono', monospace; /* Define font for menu items */
+  font-size: 12px; /* Define font size for menu items */
+}
+
+.sidebar ul li a {
+  color: #fff; /* Text color of the menu items */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Styling for the content area */
+.content {
+  margin-left: 200px; /* Adjust margin to accommodate the side menu bar */
+  padding: 20px;
+}
+
+.sidebar ul li.title {
+  padding: 10px 15px; /* Add padding to the title item */
+  font-weight: bold; /* Make the title text bold */
+  color: #fff; /* Text color of the title */
+  font-size: 16px; /* Font size of the title */
+  text-transform: uppercase; /* Convert title text to uppercase */
+}
+
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
@@ -107,3 +157,4 @@ body {
     max-height: 90%; /* Maximum height */
   }
 }
+

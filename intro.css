@@ -1,0 +1,42 @@
+.sidebar {
+    height: 100%;
+    width: 200px; /* Width of the side menu bar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('/imgs/ok.jpeg'); /* Specify the path to your background image */
+    padding-top: 20px; /* Add padding at the top */
+  }
+  
+  .sidebar ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .sidebar ul li {
+    padding: 10px 15px; /* Add padding to each menu item */
+    font-family: 'Kode Mono', monospace; /* Define font for menu items */
+    font-size: 12px; /* Define font size for menu items */
+  }
+  
+  .sidebar ul li a {
+    color: #fff; /* Text color of the menu items */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  /* Styling for the content area */
+  .content {
+    margin-left: 200px; /* Adjust margin to accommodate the side menu bar */
+    padding: 20px;
+  }
+  
+  .sidebar ul li.title {
+    padding: 10px 15px; /* Add padding to the title item */
+    font-weight: bold; /* Make the title text bold */
+    color: #fff; /* Text color of the title */
+    font-size: 16px; /* Font size of the title */
+    text-transform: uppercase; /* Convert title text to uppercase */
+  }
+  
+  
