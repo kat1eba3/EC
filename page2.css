@@ -6,8 +6,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px; /* Increase height for better visibility on smaller screens */
-    background-image: url(/EC/imgs/ok.jpeg);
+    height: 40px; /* Increase height for better visibility on smaller screens */
+    background-image: url(imgs/ok.jpeg);
     display: flex;
     justify-content: space-between; /* Distribute items along the main axis (horizontal) */
     align-items: center;
