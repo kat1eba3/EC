@@ -6,66 +6,67 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 40px; /* Increase height for better visibility on smaller screens */
+    height: 40px; /* Adjust height as needed */
     background-image: url(imgs/ok.jpeg);
     display: flex;
-    justify-content: space-between; /* Distribute items along the main axis (horizontal) */
+    justify-content: space-between;
     align-items: center;
-}
-
-.menu-title {
+  }
+  
+  .menu-title {
     color: white;
     font-size: 24px;
     font-weight: bold;
+    margin-left: 24px; /* Adjust margin as needed to separate it from part 1 */
     font-family: 'Kode Mono', monospace;
-    margin-left: 10px; /* Add margin to the left of the title */
-}
-
-.menu-part1,
-.menu-part2 {
+  
+  }
+  
+  .menu-part1 {
     color: white;
     font-size: 18px;
     font-weight: bold;
+    margin-right: 10px;
     font-family: 'Kode Mono', monospace;
-    margin-right: 10px; /* Add margin to the right of parts */
-}
-
-.menu-bar ul {
+  }
+  
+  .menu-part2 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px; /* Adjust margin as needed to separate it from part 1 */
+    font-family: 'Kode Mono', monospace;
+  
+  }
+  
+  .menu-bar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-.menu-bar li {
+  }
+  
+  .menu-bar li {
     padding: 10px 0;
     text-align: center;
-}
-
-.menu-bar a {
+  }
+  
+  .menu-bar a {
     color: white;
     text-decoration: none;
     display: block;
-}
-
-.menu-bar a:hover {
+  }
+  
+  .menu-bar a:hover {
     background-color: #ffd966;
-}
-
-/* Media query for responsiveness */
-@media (max-width: 768px) {
-    .menu-part1 {
-        display: none; /* Hide part1 on smaller screens */
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    .color-box {
+        width: 10%;
+        padding-top: 10%;
     }
-
-    .menu-bar {
-        justify-content: space-between; /* Align items to both ends */
-        padding: 0 10px; /* Add padding to both sides */
-    }
-
-    .menu-part2 {
-        margin-right: 0; /* Remove margin on smaller screens */
-    }
-}
+  }  
 
 .content {
     padding: 20px;

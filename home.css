@@ -24,11 +24,13 @@ body {
     padding-top: 10%; /* Adjusted padding for smaller screens */
   }
 
-  .color-box:nth-child(n) {
+
+
+}  .color-box:nth-child(n) {
     top: calc(10% * floor((n - 1) / 5 + 0.5)); /* Adjust top position for smaller screens */
     left: calc(20% * ((n - 1) % 5 + 0.5)); /* Adjust left position for smaller screens */
-  }
-}
+  }}
+
 
 
 .color-box,
