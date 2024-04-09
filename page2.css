@@ -107,6 +107,10 @@ body {
     position: absolute;
 }
 
+.grid-container:hover {
+    cursor: pointer;
+  }
+
 
 /* Media queries for responsiveness */
 @media (max-width: 768px) {
