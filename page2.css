@@ -1,0 +1,57 @@
+.sidebar {
+    height: 100%;
+    width: 200px; /* Width of the side menu bar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('/imgs/ok.jpeg'); /* Specify the path to your background image */
+    padding-top: 20px; /* Add padding at the top */
+    z-index: 1; /* Ensure sidebar stays above other content */
+}
+
+.sidebar ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.sidebar ul li {
+    padding: 10px 15px; /* Add padding to each menu item */
+    font-family: 'Kode Mono', monospace; /* Define font for menu items */
+    font-size: 16px; /* Define font size for menu items */
+    color: #F6EBD8; /* Text color of the menu items */
+}
+
+.sidebar ul li a {
+    color: #F6EBD8; /* Text color of the menu items */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.content {
+    margin-left: 220px; /* Adjust margin to accommodate the side menu bar */
+    padding: 20px;
+    z-index: 0; /* Ensure content stays below sidebar */
+}
+
+/* Style for the grid container */
+.grid-container {
+    margin-left: 220px; /* Adjust margin to accommodate the side menu bar */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Align items horizontally to the left */
+    align-items: flex-start; /* Align items vertically at the top */
+}
+
+/* Style for each grid item */
+.grid-item {
+    margin-left: 220px; /* Adjust margin to accommodate the side menu bar */
+    flex-basis: calc(25% - 20px); /* Adjust the width of each grid item */
+    margin: 5px; /* Add margin between grid items */
+    box-sizing: border-box; /* Ensure padding doesn't affect item width */
+}
+
+/* Style for the images within grid items */
+.grid-item img {
+    width: 60%; /* Ensure images fill the grid item */
+    height: auto; /* Maintain aspect ratio */
+}
