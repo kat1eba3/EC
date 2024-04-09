@@ -17,11 +17,11 @@
   .sidebar ul li {
     padding: 10px 15px; /* Add padding to each menu item */
     font-family: 'Kode Mono', monospace; /* Define font for menu items */
-    font-size: 12px; /* Define font size for menu items */
+    font-size: 16px; /* Define font size for menu items */
   }
   
   .sidebar ul li a {
-    color: #fff; /* Text color of the menu items */
+    color: #F6EBD8; /* Text color of the menu items */
     text-decoration: none; /* Remove underline from links */
   }
   
@@ -34,9 +34,7 @@
   .sidebar ul li.title {
     padding: 10px 15px; /* Add padding to the title item */
     font-weight: bold; /* Make the title text bold */
-    color: #fff; /* Text color of the title */
-    font-size: 16px; /* Font size of the title */
-    text-transform: uppercase; /* Convert title text to uppercase */
+    color: #F6EBD8; /* Text color of the title */
+    font-size: 36px; /* Font size of the title */
+    text-transform: uppercase; 
   }
-  
-  
