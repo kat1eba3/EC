@@ -4,17 +4,17 @@ body {
 
 .color-grid {
   position: relative;
-  width: 100%; /* Adjusted width to fill the entire viewport */
+  width: 100%;
   height: 100vh;
 }
 
 .color-box {
-  width: 5%; /* Adjust the width as needed */
+  width: 5%; 
   position: absolute;
-  padding-top: 5%; /* This will make height 20% of width, creating squares */
-  top: 50%; /* Shift vertically to the middle of the screen */
-  left: 50%; /* Shift horizontally to the middle of the screen */
-  transform: translate(-50%, -50%); /* Center the squares both horizontally and vertically */
+  padding-top: 5%; 
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
 }
 
 /* Media queries for responsiveness */
@@ -77,14 +77,14 @@ body {
   background-color: #F6EBD8;
   padding: 20px;
   border: 1px solid black;
-  width: 40%; /* Adjusted width for responsiveness */
-  max-width: 400px; /* Maximum width */
+  width: 40%;
+  max-width: 400px; 
   height: 400px;
   font-family: 'Kode Mono', monospace;
   font-size: 12px;
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center; 
+  align-items: center; 
 
 }
 
@@ -120,7 +120,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 40px; /* Adjust height as needed */
+  height: 40px; 
   background-image: url(imgs/ok.jpeg);
   display: flex;
   justify-content: space-between;
@@ -131,7 +131,7 @@ body {
   color: white;
   font-size: 24px;
   font-weight: bold;
-  margin-left: 24px; /* Adjust margin as needed to separate it from part 1 */
+  margin-left: 24px; 
   font-family: 'Kode Mono', monospace;
 
 }
@@ -148,7 +148,7 @@ body {
   color: white;
   font-size: 18px;
   font-weight: bold;
-  margin-right: 10px; /* Adjust margin as needed to separate it from part 1 */
+  margin-right: 10px; 
   font-family: 'Kode Mono', monospace;
 
 }
@@ -180,7 +180,6 @@ body {
 }
 
 
-/* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
   .color-box {
       width: 10%;
@@ -189,10 +188,10 @@ body {
 
   .data-textbox,
   #secondTextBox {
-      width: 90%; /* Adjusted width for smaller screens */
-      max-width: 90%; /* Maximum width */
-      height: auto; /* Allow height to adjust based on content */
-      max-height: 90%; /* Maximum height */
+      width: 90%; 
+      max-width: 90%; 
+      height: auto; 
+      max-height: 90%;
   }
 }
 
