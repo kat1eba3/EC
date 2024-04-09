@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "confident",
             "hexCode": "#8D1B26, #7D6862, #FDFDD5, #E1E0F1",
             "rating": "8.2/10",
-            "imagePath": "/EC/IMGS/EC_1.png"
+            "imagePath": "IMGS/EC_1.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Monochromatic",
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "calm",
             "hexCode": "#5D6171, #151920",
             "rating": "8.5/10",
-            "imagePath": "/EC/IMGS/EC_2.png"
+            "imagePath": "EC/IMGS/EC_2.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Analogous, Complementary",
