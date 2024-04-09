@@ -221,34 +221,29 @@ document.addEventListener("DOMContentLoaded", function() {
     
     
 
-    // Create text data popup
     const dataTextBox = document.createElement('div');
     dataTextBox.id = 'dataTextBox';
     dataTextBox.classList.add('data-textbox');
-    dataTextBox.style.display = 'none'; // Hide the data textbox initially
+    dataTextBox.style.display = 'none'; 
     document.body.appendChild(dataTextBox);
 
-    // Create second text popup
     const secondTextBox = document.createElement('div');
     secondTextBox.id = 'secondTextBox';
     secondTextBox.classList.add('data-textbox');
-    secondTextBox.style.display = 'none'; // Hide the second textbox initially
+    secondTextBox.style.display = 'none'; 
     document.body.appendChild(secondTextBox);
 
-    let clickCount = 0; // Variable to track the number of clicks
+    let clickCount = 0; 
 
     colorBoxes.forEach((colorBox, index) => {
         colorBox.addEventListener('click', function() {
-            // Always show the second text box when a color box is clicked
             const data = jsonData[index];
             showSecondTextBox(data, index);
         });
     });
     
-    // Add event listener to second textbox
     secondTextBox.addEventListener('click', function() {
         if (clickCount % 2 === 1) {
-            // If click count is odd, show first textbox
             showDataType(secondTextBox.dataset.jsonIndex); // Use secondTextBox.dataset.jsonIndex
         }
     });
@@ -269,9 +264,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p><strong>Rating:</strong> ${data.rating}</p>
             </div>
         `;
-        dataTextBox.style.display = 'block'; // Show the data textbox
-        secondTextBox.style.display = 'none'; // Hide the second textbox
-        clickCount = 0; // Reset click count after hiding textboxes
+        dataTextBox.style.display = 'block'; 
+        secondTextBox.style.display = 'none'; 
+        clickCount = 0; 
     }
 
     function showSecondTextBox(data, index) {
@@ -281,15 +276,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 <!-- Add additional content or data here if needed -->
             </div>
         `;
-        secondTextBox.style.display = 'block'; // Show the second textbox
-        dataTextBox.style.display = 'none'; // Hide the first textbox
-        secondTextBox.dataset.jsonIndex = index; // Store the index of data in the second textbox
-        clickCount++; // Increment click count
+        secondTextBox.style.display = 'block'; 
+        dataTextBox.style.display = 'none';
+        secondTextBox.dataset.jsonIndex = index; 
+        clickCount++;
     }
 
     function hideTextboxes() {
-        dataTextBox.style.display = 'none'; // Hide the data textbox
-        secondTextBox.style.display = 'none'; // Hide the second textbox
+        dataTextBox.style.display = 'none';
+        secondTextBox.style.display = 'none'; 
         clickCount = 0; // Reset click count
     }
 
