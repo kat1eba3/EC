@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "calm",
             "hexCode": "#5D6171, #151920",
             "rating": "8.5/10",
-            "imagePath": "EC/IMGS/EC_2.png"
+            "imagePath": "imgs/EC_2.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Analogous, Complementary",
