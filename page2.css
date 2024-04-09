@@ -1,57 +1,121 @@
-.sidebar {
-    height: 100%;
-    width: 200px; /* Width of the side menu bar */
+body {
+    background-color: #F6EBD8;
+  }
+  .menu-bar {
     position: fixed;
     top: 0;
     left: 0;
-    background-image: url('/imgs/ok.jpeg'); /* Specify the path to your background image */
-    padding-top: 20px; /* Add padding at the top */
-    z-index: 1; /* Ensure sidebar stays above other content */
+    width: 100%;
+    height: 60px; /* Increase height for better visibility on smaller screens */
+    background-image: url(/imgs/ok.jpeg);
+    display: flex;
+    justify-content: space-between; /* Distribute items along the main axis (horizontal) */
+    align-items: center;
 }
 
-.sidebar ul {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+.menu-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Kode Mono', monospace;
+    margin-left: 10px; /* Add margin to the left of the title */
 }
 
-.sidebar ul li {
-    padding: 10px 15px; /* Add padding to each menu item */
-    font-family: 'Kode Mono', monospace; /* Define font for menu items */
-    font-size: 16px; /* Define font size for menu items */
-    color: #F6EBD8; /* Text color of the menu items */
+.menu-part1,
+.menu-part2 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Kode Mono', monospace;
+    margin-right: 10px; /* Add margin to the right of parts */
 }
 
-.sidebar ul li a {
-    color: #F6EBD8; /* Text color of the menu items */
-    text-decoration: none; /* Remove underline from links */
+.menu-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-bar li {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu-bar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-bar a:hover {
+    background-color: #ffd966;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .menu-part1 {
+        display: none; /* Hide part1 on smaller screens */
+    }
+
+    .menu-bar {
+        justify-content: space-between; /* Align items to both ends */
+        padding: 0 10px; /* Add padding to both sides */
+    }
+
+    .menu-part2 {
+        margin-right: 0; /* Remove margin on smaller screens */
+    }
 }
 
 .content {
-    margin-left: 220px; /* Adjust margin to accommodate the side menu bar */
     padding: 20px;
     z-index: 0; /* Ensure content stays below sidebar */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
-/* Style for the grid container */
+/* Other CSS rules remain the same */
+
 .grid-container {
-    margin-left: 220px; /* Adjust margin to accommodate the side menu bar */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start; /* Align items horizontally to the left */
-    align-items: flex-start; /* Align items vertically at the top */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin: 60px 20px 20px; /* Adjusted margin to create space between menu bar and grid */
 }
 
-/* Style for each grid item */
 .grid-item {
-    margin-left: 220px; /* Adjust margin to accommodate the side menu bar */
-    flex-basis: calc(25% - 20px); /* Adjust the width of each grid item */
-    margin: 5px; /* Add margin between grid items */
-    box-sizing: border-box; /* Ensure padding doesn't affect item width */
+    overflow: hidden;
 }
 
-/* Style for the images within grid items */
 .grid-item img {
-    width: 60%; /* Ensure images fill the grid item */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid-container .grid-item:nth-last-child(-n+3) {
+    grid-column: span 4; /* Adjust the number of columns to span */
+}
+
+/* Your existing CSS styles */
+
+/* Style for the scattered squares */
+.square {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .grid-item {
+        flex-basis: calc(50% - 10px); /* Adjust the width of each grid item for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .grid-item {
+        flex-basis: calc(100% - 10px); /* Adjust the width of each grid item for even smaller screens */
+    }
 }

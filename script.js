@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "colorSchemeComplemantaryNeuralEtc": "Monochromatic",
             "colorsOfOutfit": "black, blue ",
             "moodOfOutfitBoldCalmEtc": "casual, minimilastic ",
-            "hexCode": "30s",
+            "hexCode": "65463,91AAB8",
             "rating": "7.3/10",
             "imagePath": "IMGS/EC_14.png"
         },

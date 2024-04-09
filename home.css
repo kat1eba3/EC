@@ -6,7 +6,6 @@ body {
   position: relative;
   width: calc(100% - 200px); /* Adjusted width to accommodate the menu bar */
   height: 100vh;
-  margin-left: 200px; /* Add left margin to create space for the menu bar */
 }
 
 
@@ -68,7 +67,6 @@ body {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
-  margin-left: 200px; /* Add left margin to create space for the menu bar */
 
 }
 
@@ -77,7 +75,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  margin-left: 200px; /* Add left margin to create space for the menu bar */
 
 }
 
@@ -100,61 +97,78 @@ body {
 }
 
 
-.sidebar {
-  height: 100%;
-  width: 200px; /* Width of the side menu bar */
+.menu-bar {
   position: fixed;
   top: 0;
   left: 0;
-  background-image: url('/imgs/ok.jpeg'); /* Specify the path to your background image */
-  padding-top: 20px; /* Add padding at the top */
+  width: 100%;
+  height: 40px; /* Adjust height as needed */
+  background-image: url(/imgs/ok.jpeg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.sidebar ul {
-  list-style-type: none; /* Remove default list styling */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+.menu-title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 24px; /* Adjust margin as needed to separate it from part 1 */
+  font-family: 'Kode Mono', monospace;
+
 }
 
-.sidebar ul li {
-  padding: 10px 15px; /* Add padding to each menu item */
-  font-family: 'Kode Mono', monospace; /* Define font for menu items */
-  font-size: 16px; /* Define font size for menu items */
+.menu-part1 {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px;
+  font-family: 'Kode Mono', monospace;
 }
 
-.sidebar ul li a {
-  color: #F6EBD8; /* Text color of the menu items */
-  text-decoration: none; /* Remove underline from links */
+.menu-part2 {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 10px; /* Adjust margin as needed to separate it from part 1 */
+  font-family: 'Kode Mono', monospace;
+
 }
 
-/* Styling for the content area */
-.content {
-  margin-left: 200px; /* Adjust margin to accommodate the side menu bar */
-  padding: 20px;
+.menu-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.sidebar ul li.title {
-  padding: 10px 15px; /* Add padding to the title item */
-  font-weight: bold; /* Make the title text bold */
-  color: #F6EBD8; /* Text color of the title */
-  font-size: 36px; /* Font size of the title */
-  text-transform: uppercase; 
+.menu-bar li {
+  padding: 10px 0;
+  text-align: center;
 }
 
+.menu-bar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-bar a:hover {
+  background-color: #ffd966;
+}
 
 /* Media queries for responsiveness */
 @media screen and (max-width: 768px) {
   .color-box {
-    width: 10%;
-    padding-top: 10%;
+      width: 10%;
+      padding-top: 10%;
   }
 
   .data-textbox,
   #secondTextBox {
-    width: 90%; /* Adjusted width for smaller screens */
-    max-width: 90%; /* Maximum width */
-    height: auto; /* Allow height to adjust based on content */
-    max-height: 90%; /* Maximum height */
+      width: 90%; /* Adjusted width for smaller screens */
+      max-width: 90%; /* Maximum width */
+      height: auto; /* Allow height to adjust based on content */
+      max-height: 90%; /* Maximum height */
   }
 }
 
