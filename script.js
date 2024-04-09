@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "eccentric",
             "hexCode": "FFAB96, B6CCE9",
             "rating": "5.5/10",
-            "imagePath": "/EC/IMGS/EC_3.png"
+            "imagePath": "imgs/EC_3.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Analogous with accents",
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "playful",
             "hexCode": "0F0E13, F9F9F9, 92D027",
             "rating": "6.8/10",
-            "imagePath": "/EC/IMGS/EC_4.png"
+            "imagePath": "imgs/EC_4.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Complementary",
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "bold",
             "hexCode": "578CF2, D70C1F, F2F4FF",
             "rating": "2024-09-10T04:00:00.000Z",
-            "imagePath": "/EC/IMGS/EC_5.png"
+            "imagePath": "imgs/EC_5.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Monochromatic",
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "artsy, sophisticated",
             "hexCode": "F0DFFC, E5EBEE",
             "rating": "7.8/10",
-            "imagePath": "/EC/IMGS/EC_6.png"
+            "imagePath": "imgs/EC_6.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Complementary, neutral",
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "1) casual 2) casually sophisticated ",
             "hexCode": "EAE4B7, 1F7CB6, 4A506F, EEE2E0",
             "rating": "7.2/10",
-            "imagePath": "/EC/IMGS/EC_7.png"
+            "imagePath": "imgs/EC_7.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Monochromatic",
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "playful, ecclectic, sophisticated",
             "hexCode": "DD6F5B, C8874A, BE5341",
             "rating": "7.5/10",
-            "imagePath": "/EC/IMGS/EC_8.png"
+            "imagePath": "imgs/EC_8.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Monochromatic",
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "playful, bold",
             "hexCode": "7E96B9, 3E444B, 35363B, C11E49, C9CFDB",
             "rating": "8.8/10",
-            "imagePath": "/EC/IMGS/EC_9.png"
+            "imagePath": "imgs/EC_9.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Monochromatic",
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "minimalistic ",
             "hexCode": "1E1D26",
             "rating": "7/10",
-            "imagePath": "/EC/IMGS/EC_10.png"
+            "imagePath": "imgs/EC_10.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "complementary ",
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "eccentric",
             "hexCode": "97E385, 151D3F",
             "rating": "6.5/10",
-            "imagePath": "/EC/IMGS/EC_11.png"
+            "imagePath": "imgs/EC_11.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "neutral",
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "calm, casual",
             "hexCode": "C8B5B0, FCFCFC, 5796B5, DEC298, 5C5860, FD8775, B5CBD8",
             "rating": "8.4/10",
-            "imagePath": "/EC/IMGS/EC_12.png"
+            "imagePath": "imgs/EC_12.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "neutral",
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "calm",
             "hexCode": "663836, BD856C",
             "rating": "6.8/10",
-            "imagePath": "/EC/IMGS/EC_13.png"
+            "imagePath": "imgs/EC_13.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Monochromatic",
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "casual, minimilastic ",
             "hexCode": "65463,91AAB8",
             "rating": "7.3/10",
-            "imagePath": "/EC/IMGS/EC_14.png"
+            "imagePath": "imgs/EC_14.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Analogous with accents",
@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "casual, chic",
             "hexCode": "EEDAE6, 64A8DF",
             "rating": "8.6/10",
-            "imagePath": "/EC/IMGS/EC_15.png"
+            "imagePath": "imgs/EC_15.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Monochromatic",
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "retro",
             "hexCode": "2B83BC, EEDDB9",
             "rating": "8.9/10",
-            "imagePath": "/EC/IMGS/EC_16.png"
+            "imagePath": "imgs/EC_16.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Monochromatic",
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "elegant, playful",
             "hexCode": "CB9F71",
             "rating": "6.9/10",
-            "imagePath": "/EC/IMGS/EC_17.png"
+            "imagePath": "imgs/EC_17.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "triadic",
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "casual",
             "hexCode": "D7D2DB, 171B25, B4A775, B2BDC7",
             "rating": "7.3/10",
-            "imagePath": "/EC/IMGS/EC_18.png"
+            "imagePath": "imgs/EC_18.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "analogous with accents",
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "ecclectic",
             "hexCode": "A8C4EC, BB99F5, 4A8C68, FDD693",
             "rating": "6.2/10",
-            "imagePath": "/EC/IMGS/EC_19.png"
+            "imagePath": "imgs/EC_19.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "complementary with analogous accents",
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "edgy",
             "hexCode": "E96279, C9B7A9, 87A09A, 3E484A",
             "rating": "8.4/10",
-            "imagePath": "/EC/MGS/EC_20.png"
+            "imagePath": "imgs/EC_20.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "Monochromatic with accent",
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "whimsical, playful",
             "hexCode": "32373F, FFE1FD",
             "rating": "9.2/10",
-            "imagePath": "/EC/IMGS/EC_21.png"
+            "imagePath": "imgs/EC_21.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "analogous with accents",
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "bold, casual",
             "hexCode": "15BE5F, 624439, A1CDF3, AB3636, 272B35",
             "rating": "8.4/10",
-            "imagePath": "/EC/IMGS/EC_22.png"
+            "imagePath": "imgs/EC_22.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "triadic",
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "casual",
             "hexCode": "B98D65, E3E1DF, 90A7B3",
             "rating": "8.2/10",
-            "imagePath": "/EC/IMGS/EC_23.png"
+            "imagePath": "imgs/EC_23.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "analogous",
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "elegant, minimalistic",
             "hexCode": "95656F, 394C79, DEE3E2",
             "rating": "7.8/10",
-            "imagePath": "/EC/IMGS/EC_24.png"
+            "imagePath": "imgs/EC_24.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "analogous",
@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "artsy",
             "hexCode": "F09A61, 92574B, EAEAE1, 838889, BCAC9C, 2E3643",
             "rating": "8.3/10",
-            "imagePath": "/EC/IMGS/EC_25.png"
+            "imagePath": "imgs/EC_25.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "split complementary",
@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "artsy",
             "hexCode": "A15743, 0D1522, 264F84, 6E1234, CDE4FD",
             "rating": "6.4/10",
-            "imagePath": "/EC/IMGS/EC_26.png"
+            "imagePath": "imgs/EC_26.png"
         },
         {
             "colorSchemeComplemantaryNeuralEtc": "tetradic",
@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function() {
             "moodOfOutfitBoldCalmEtc": "playful, eccentric, casual",
             "hexCode": "F1F6FF, 343346, 1755B3, FFDAFF",
             "rating": "7.2/10",
-            "imagePath": "/EC/IMGS/EC_27.png"
+            "imagePath": "imgs/EC_27.png"
         }
     ]
     
