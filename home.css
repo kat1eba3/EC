@@ -1,22 +1,21 @@
 body {
-  background-color: #f0eee5; 
+  background-color: #f0eee5;
 }
 
 .color-grid {
   position: relative;
-  width: 100%; 
-  height: 100vh; 
+  width: 100%;
+  height: 100vh;
 }
 
 /* Set the width of the color-box elements */
 .color-box {
   width: 5%; /* Adjust the width as needed */
   position: absolute;
-  /* Maintain aspect ratio */
   padding-top: 5%; /* This will make height 20% of width, creating squares */
 }
 
-/* Define positions for .color-box elements using percentages */
+
 .color-box:nth-child(1) { top: 20%; left: 10%; }
 .color-box:nth-child(2) { top: 40%; left: 30%; }
 .color-box:nth-child(3) { top: 60%; left: 50%; }
@@ -38,52 +37,61 @@ body {
 .color-box:nth-child(19) { top: 40%; left: 10%; }
 .color-box:nth-child(20) { top: 60%; left: 30%; }
 
-
-.data-textbox {
-  position: absolute;
+.data-textbox,
+#secondTextBox {
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #f0eee5;
   padding: 20px;
   border: 1px solid black;
-  width: 400px;
-  height:400px;
+  width: 40%; /* Adjusted width for responsiveness */
+  max-width: 400px; /* Maximum width */
+  height: 400px;
   font-family: 'Kode Mono', monospace;
   font-size: 12px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
 #secondTextBox {
   position: fixed;
   top: 50%;
-  right: 10%; /* Adjust as needed */
+  left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #f0eee5; /* Same color as the first textbox */
-  border: 1px solid black;
-  padding: 20px;
-  width: 400px; /* Same width as the first textbox */
-  height: 400px; /* Same height as the first textbox */
-  font-family: 'Kode Mono', monospace;
-  font-size: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 999; /* Ensure it's above other elements */
 }
-
 
 .data-item {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: flex-start; /* Align items to the start (left) */
-  height: 100%; /* Ensure the content takes up the full height of the circle */
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
   width: 200px;
   padding-left: 100px;
 }
 
- 
 .data-item img {
-  max-width: 100%; /* Ensure the image does not exceed its container's width */
-  height: auto; /* Maintain the aspect ratio of the image */
-  display: block; /* Ensure the image is displayed as a block element */
-  margin: 10px auto; /* Add some margin to center the image horizontally */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .color-box {
+    width: 10%;
+    padding-top: 10%;
+  }
+
+  .data-textbox,
+  #secondTextBox {
+    width: 90%; /* Adjusted width for smaller screens */
+    max-width: 90%; /* Maximum width */
+    height: auto; /* Allow height to adjust based on content */
+    max-height: 90%; /* Maximum height */
+  }
 }
