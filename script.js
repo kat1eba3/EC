@@ -237,19 +237,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let clickCount = 0; // Variable to track the number of clicks
 
-    // Add event listener to color boxes
     colorBoxes.forEach((colorBox, index) => {
         colorBox.addEventListener('click', function() {
-            if (clickCount % 2 === 0) {
-                // If click count is even, show second textbox
-                const data = jsonData[index];
-                showSecondTextBox(data, index); // Pass the index to showSecondTextBox function
-            } else {
-                // If click count is odd, do nothing
-            }
+            // Always show the second text box when a color box is clicked
+            const data = jsonData[index];
+            showSecondTextBox(data, index);
         });
     });
-
+    
     // Add event listener to second textbox
     secondTextBox.addEventListener('click', function() {
         if (clickCount % 2 === 1) {
