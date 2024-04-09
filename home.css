@@ -4,16 +4,32 @@ body {
 
 .color-grid {
   position: relative;
-  width: calc(100% - 200px); /* Adjusted width to accommodate the menu bar */
+  width: 100%; /* Adjusted width to fill the entire viewport */
   height: 100vh;
 }
-
 
 .color-box {
   width: 5%; /* Adjust the width as needed */
   position: absolute;
   padding-top: 5%; /* This will make height 20% of width, creating squares */
+  top: 50%; /* Shift vertically to the middle of the screen */
+  left: 50%; /* Shift horizontally to the middle of the screen */
+  transform: translate(-50%, -50%); /* Center the squares both horizontally and vertically */
 }
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .color-box {
+    width: 10%; /* Adjusted width for smaller screens */
+    padding-top: 10%; /* Adjusted padding for smaller screens */
+  }
+
+  .color-box:nth-child(n) {
+    top: calc(10% * floor((n - 1) / 5 + 0.5)); /* Adjust top position for smaller screens */
+    left: calc(20% * ((n - 1) % 5 + 0.5)); /* Adjust left position for smaller screens */
+  }
+}
+
 
 .color-box,
 .data-textbox {
